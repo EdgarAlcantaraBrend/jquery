@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="../jquery-3.6.0.min.js"></script>
+        <title>Campos de texto</title>
+    </head>
+    <body>
+        
+        <input type="text" name="" id="micampo">
+        <button id="miboton">Tomar valor</button>
+    </body>
+</html>
+<script>
+    $(document).ready(function(){
+        //ASi le agregamos valor a un campo de texto
+        //$('#micampo').val('este es el valor');
+
+
+        //Asi obtenemos el valor de un campo de texto
+        $('#miboton').click(function(){
+            alert($('#micampo').val());
+        });
+    });
+</script>
